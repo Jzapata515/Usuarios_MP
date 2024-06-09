@@ -1,0 +1,33 @@
+{
+  "name": "usuarios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "mocha 'src/test/**/*test.js' --timeout 10000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "body-parser": "^1.19.0",
+    "chai": "^4.3.6",
+    "chai-as-promised": "^7.1.1",
+    "chai-http": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jest": "^29.7.0",
+    "jsonschema": "^1.4.1",
+    "mocha": "^10.1.0",
+    "mongodb": "^4.1.1",
+    "mongoose": "^6.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12",
+    "sinon": "^12.0.1",
+    "sinon-mongo": "^2.1.0"
+  }
+}

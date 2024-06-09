@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "5eabcb19-c56d-408f-9721-635f4165d7cc",
+		"name": "CRUD de USUARIOS MP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7548219"
+	},
+	"item": [
+		{
+			"name": "Guardar Usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Juan Pablo\",\r\n    \"apellido\":\"Zapata5\",\r\n    \"correo\":\"jzapata@blucapital.mx\",\r\n    \"password\": \"Jzapata129\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Usuario por Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Juan Pablo Zapata\",\r\n    \"edad\": 35,\r\n    \"email\":\"jzapata@blucapital.mx\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/usuarios/63d5c97ef2ab193a78c1cb30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"usuarios",
+						"63d5c97ef2ab193a78c1cb30"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/usuarios?nombre=Juan Pablo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"usuarios"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "Juan Pablo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Usuario por Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/usuarios/63d5c97ef2ab193a78c1cb30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"usuarios",
+						"63d5c97ef2ab193a78c1cb30"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Usuario por Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/usuarios/63d5c97ef2ab193a78c1cb30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"usuarios",
+						"63d5c97ef2ab193a78c1cb30"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
