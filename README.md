@@ -3,7 +3,7 @@ Para correr la app en un contenedor Docker siga los pasos:
 
     - Paso 1: Clonar repositorio
 
-        git clone https://github.com/Jzapata515/Usuarios_MP.git
+        git clone -b develop https://github.com/Jzapata515/Usuarios_MP.git e
 
     -Paso 2: Crear imagen
 
@@ -13,13 +13,13 @@ Para correr la app en un contenedor Docker siga los pasos:
 
         docker run -p 4000:4000 usuarios
 
-Para correr la app en su máquina local:
+Para correr la app en su máquina local (Deberá tener instalado nodejs v20):
 
     - Paso 1: Clonar repositorio
 
-        git clone https://github.com/Jzapata515/Usuarios_MP.git
+        git clone -b develop https://github.com/Jzapata515/Usuarios_MP.git
 
-    - Paso 2: Validar que el puerto 400 esté libre
+    - Paso 2: Validar que el puerto 4000 esté libre
 
     - Paso 3: Instalar dependencias
 
