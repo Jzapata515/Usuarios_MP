@@ -24,10 +24,16 @@ Para correr la app en su máquina local (Deberá tener instalado nodejs v20):
     - Paso 3: Instalar dependencias
 
         npm install
+
+    - Paso 5: Correr los test
+
+        npm test
     
-    - Paso 4: Correr la aplicación
+    - Paso 5: Correr la aplicación
 
         npm start
+
+
 
 Para hacer pruebas de los endpoints se agregó una coleccion en postman en la ruta:
 
